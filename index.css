@@ -1,14 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+.jua-regular {
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Jua&display=swap');
+/* 
+<uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 100 to 900 
+*/
+
+.epilogue-regular {
+  font-family: "Epilogue", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 #landing {
     background: #C8C8C8;
     height: 1024px;
 }
 
+/* ==== Most are arranged in TOP>BOTTOM-LEFT>RIGHT fashion */
+/*      ADDITIONALLY, they are grouped in the following order:
+        -LAYOUT
+        -STYLE / TYPOGRAPHY
+        -FURTHER DETAILS 
+*/
+
 .sidebar {
+    z-index: 0;
     width: 240px;
     height: 1024px;
     flex-shrink: 0;
     background: linear-gradient(180deg, #E1E1E1 35.49%, #C5C5C5 100%);
     
+}
+
+.sidebar-toggle {
+    position: relative;
+
+}
+
+.sidebar-startoggle {
+    z-index: 1;
+    position: relative;
+
+}
+
+#sidebar-star {
+    width: 215.8px;
+    height: 215.8px;
+    transform: rotate(-15deg);
+    flex-shrink: 0;
+
+    fill: #CFCFCF;
+}
+
+.sidebar-menutoggle {
+    position: absolute;
+    z-index: 2;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+
+    top: 97px;
+    left: 64px;
+}
+
+.menutoggle {
+    width: 31px;
+    height: 0px;
+
+    stroke-width: 7px;
+    stroke: #F5F5F5;
+}
+
+
+
+.sidebar-nav {
+    display: inline-flex;
+    padding: 0px 25px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.sidebar-nav span {
+    color: #505050;
+    font-family: Jua;
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.99px;
+}
+
+
+.sidebar-nav span:first-child { 
+    color: #FFF;
+}
+
+
+.sidebar-footnote {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+}
+
+.sidebar-footnote span {
+    color: #505050;
+    font-family: Epilogue;
+    text-align: right;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.sidebar-footnote span:first-child {
+    font-size: 20px;
+
 }
 
 
